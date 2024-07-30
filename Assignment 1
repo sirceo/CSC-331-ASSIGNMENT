@@ -1,0 +1,40 @@
+Assignment One
+implementation of an array and its operations (insert and delete) using Python:
+
+```
+class Array:
+    def __init__(self):
+        self.array = []
+
+    def insert(self, value):
+        self.array.append(value)
+
+    def delete(self, value):
+        if value in self.array:
+            self.array.remove(value)
+        else:
+            print("Value not found in the array")
+
+    def display(self):
+        print(self.array)
+
+
+# Create an instance of the Array class
+arr = Array()
+
+# Insert values into the array
+arr.insert(10)
+arr.insert(20)
+arr.insert(30)
+arr.insert(40)
+arr.insert(50)
+
+# Display the array
+arr.display()  # Output: [10, 20, 30, 40, 50]
+
+# Delete a value from the array
+arr.delete(30)
+
+# Display the array after deletion
+arr.display()  # Output: [10, 20, 40, 50]
+``
